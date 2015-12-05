@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+</head>
+<body>
+<h1>Calculator</h1>
+
+<div>
+    <input type="text" id="x" value="0" title="first parameter">
+    <input type="text" id="y" value="0" title="second parameter">
+    <input type="button" value="Add" onclick="add()">
+</div>
+<script src="build/main.js"></script>
+<script>
+    window.calculator = new Calculator(new ALU());
+    var inputs = {
+        get w1() {
+            return new Word(parseInt(document.getElementById("x").value))
+        },
+        get w2() {
+            return new Word(parseInt(document.getElementById("y").value))
+        }
+    };
+    function add() {
+        var res = calculator.add(inputs.w1, inputs.w2);
+        showResult(res.value);
+    }
+    function showResult(w) {
+        alert(w);
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+class MemorySegment{
+    ram:RAM;
+
+}

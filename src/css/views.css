@@ -1,0 +1,37 @@
+.memory-segment-view{
+    overflow: auto;
+}
+textarea {
+    white-space: pre;
+    word-wrap: normal;
+    overflow-x: scroll;
+}
+.code-panel{
+    display: flex;
+    flex-direction: column;
+}
+.h-group{
+    display: flex;
+}
+.gap12 >*{
+    margin-left:12px;
+    margin-right:12px;
+}
+.height100pr{
+    height:100%;
+}
+.emulator-view-center-panel{
+    margin:12px;
+    display: flex;
+}
+.emulator-view-center-panel >*{
+    margin:12px;
+}
+.assembly-panel{
+    display: flex;
+    flex-direction: column;
+}
+.assembly-input{
+    width:180px;
+    height:100%;
+}

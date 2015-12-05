@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "sourceMap": true,
+    "outFile":"../build/main.js",
+    "jsx": "react"
+  },
+  "files": [
+    "ts/main.ts",
+    "ts/utils/Logger.ts",
+    "ts/circuits/Sumator.ts",
+    "ts/circuits/Word.ts",
+    "ts/circuits/AND.ts",
+    "ts/circuits/ALU.ts",
+    "ts/circuits/Calculator.ts",
+    "ts/circuits/RAM.ts",
+    "ts/circuits/Counter.ts",
+    "ts/circuits/ScreenDisplay.ts",
+    "ts/circuits/Keyboard.ts",
+    "ts/circuits/CPU.ts",
+    "ts/software/Assembler.ts",
+    "ts/software/MemorySegment.ts",
+    "ts/software/gui/MemorySegmentView.tsx",
+    "ts/software/gui/CPU_View.tsx",
+    "ts/software/gui/EmulatorView.tsx",
+    "ts/software/Emulator.ts",
+    "ts/software/MainView.ts",
+    "ts/software/LiteEvent.ts",
+    "ts/software/JakCompiler.ts"
+  ]
+}
